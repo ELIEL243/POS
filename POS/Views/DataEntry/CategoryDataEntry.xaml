@@ -1,0 +1,28 @@
+﻿<Window x:Class="POS.Views.DataEntry.CategoryDataEntry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POS.Views.DataEntry"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         Background="{DynamicResource MaterialDesignPaper}"
+         FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        mc:Ignorable="d"
+        Title="CategoryDataEntry" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <materialDesign:ColorZone Mode="PrimaryLight" Padding="16" Background="#FF3B4F81" Foreground="#FF26375C" Height="70">
+
+        </materialDesign:ColorZone>
+        <Button Content="valider" FontSize="22" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="333,306,0,0" Background="#FF5D6B99" Width="166" Height="47" Click="Button_Click" Cursor="Hand" FontFamily="Bahnschrift Condensed"/>
+
+        <TextBox x:Name="NameTextBox" FontSize="21" materialDesign:HintAssist.Hint="Nom de la categorie..." Text="{Binding Name}" Height="55" Margin="0,209,223,0" HorizontalAlignment="Right" Width="307" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed"/>
+        <Label HorizontalContentAlignment="Center" Content="Catégorie" FontSize="32" VerticalContentAlignment="Center" Margin="273,3,239,0" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FFFAFAFA" Height="44" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="798" Background="#FF5D6B99" Height="22"/>
+    </Grid>
+</Window>
